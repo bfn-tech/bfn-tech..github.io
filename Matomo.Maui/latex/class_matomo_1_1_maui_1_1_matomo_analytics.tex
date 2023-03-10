@@ -1,0 +1,178 @@
+\hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics}{}\doxysection{Matomo.\+Maui.\+Matomo\+Analytics Class Reference}
+\label{class_matomo_1_1_maui_1_1_matomo_analytics}\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_ab595bbdf1c042826deeee6f25daecda4}\label{class_matomo_1_1_maui_1_1_matomo_analytics_ab595bbdf1c042826deeee6f25daecda4}} 
+{\bfseries Matomo\+Analytics} (string api\+Url, int site\+Id)
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a36e7f8bc2466d662a322ccaf519c3539}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a36e7f8bc2466d662a322ccaf519c3539}} 
+void {\bfseries Update\+Dimension} (string name, string new\+Value)
+\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_a6fc631e14836500b865c213788cba6c6}{Track\+Page}} (string name, string path=\char`\"{}/\char`\"{})
+\begin{DoxyCompactList}\small\item\em Tracks a page visit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_ae9ca1336f5a32fd05d0f57552062c4fa}{Track\+Page\+Event}} (string category, string action, string name=null, int? value=null)
+\begin{DoxyCompactList}\small\item\em Tracks an page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_a95d375be50adab079e8541370136542a}{Track\+Event}} (string category, string action)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_a7def0ae74ece2230fe5ce9f4b1787702}{Track\+Event}} (string category, string action, string name)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_a7490149d9c70d172eb426c25d7c378a2}{Track\+Event}} (string category, string action, string name, int? value)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_maui_1_1_matomo_analytics_a30bd267145756af9e67e0cee69e09318}{Track\+Search}} (string query, int result\+Count, string category=null)
+\begin{DoxyCompactList}\small\item\em Tracks a search query. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a343a56a5fff7695dac9360252c9bf9ca}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a343a56a5fff7695dac9360252c9bf9ca}} 
+void {\bfseries Leaving\+The\+App} ()
+\begin{DoxyCompactList}\small\item\em Track an App exit. Needed to acuratly time the visibility of last page and triggers an Dispatch(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_ae2d15824d5f61e59d2024f1765350450}\label{class_matomo_1_1_maui_1_1_matomo_analytics_ae2d15824d5f61e59d2024f1765350450}} 
+async Task$<$ bool $>$ {\bfseries Dispatch} ()
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a22ab46e4160dac37547ec80428cad911}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a22ab46e4160dac37547ec80428cad911}} 
+void {\bfseries Clear\+Queue} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_ad0cab0aa32ef98bd122a2acba27de57d}\label{class_matomo_1_1_maui_1_1_matomo_analytics_ad0cab0aa32ef98bd122a2acba27de57d}} 
+List$<$ \mbox{\hyperlink{class_matomo_1_1_maui_1_1_dimension}{Dimension}} $>$ {\bfseries Dimensions} = new List$<$\mbox{\hyperlink{class_matomo_1_1_maui_1_1_dimension}{Dimension}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a2e60c201557a3b2e54ec3f9a60cd4137}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a2e60c201557a3b2e54ec3f9a60cd4137}} 
+string {\bfseries User\+Agent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a7e498b3bc365700d4b9f82a576294075}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a7e498b3bc365700d4b9f82a576294075}} 
+bool {\bfseries Verbose} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a532dc14e9ff94ff4be72222866f64fbe}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a532dc14e9ff94ff4be72222866f64fbe}} 
+int {\bfseries Unsent\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a600698c5fbe862f736747e2b46e5ad4e}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a600698c5fbe862f736747e2b46e5ad4e}} 
+string {\bfseries App\+Url} = \char`\"{}http\+://app\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The base url used by the app (piwi\textquotesingle{}s url parameter). Default is \href{http://app}{\texttt{ http\+://app}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a5fd4aef491f27ba2fa8f01b919847396}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a5fd4aef491f27ba2fa8f01b919847396}} 
+bool {\bfseries Opt\+Out}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a95d375be50adab079e8541370136542a}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a95d375be50adab079e8541370136542a}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a7def0ae74ece2230fe5ce9f4b1787702}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a7def0ae74ece2230fe5ce9f4b1787702}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a7490149d9c70d172eb426c25d7c378a2}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a7490149d9c70d172eb426c25d7c378a2}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name,  }\item[{int?}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a6fc631e14836500b865c213788cba6c6}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a6fc631e14836500b865c213788cba6c6}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackPage@{TrackPage}}
+\index{TrackPage@{TrackPage}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPage()}{TrackPage()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Page (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path = {\ttfamily \char`\"{}/\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks a page visit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & page name (eg. \char`\"{}\+Settings\char`\"{}, \char`\"{}\+Users\char`\"{}, etc)\\
+\hline
+{\em path} & path which led to the page (eg. \char`\"{}/settings/language\char`\"{}), default is \char`\"{}/\char`\"{}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_ae9ca1336f5a32fd05d0f57552062c4fa}\label{class_matomo_1_1_maui_1_1_matomo_analytics_ae9ca1336f5a32fd05d0f57552062c4fa}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackPageEvent@{TrackPageEvent}}
+\index{TrackPageEvent@{TrackPageEvent}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPageEvent()}{TrackPageEvent()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Page\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name = {\ttfamily null},  }\item[{int?}]{value = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & optional event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & optional event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_maui_1_1_matomo_analytics_a30bd267145756af9e67e0cee69e09318}\label{class_matomo_1_1_maui_1_1_matomo_analytics_a30bd267145756af9e67e0cee69e09318}} 
+\index{Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}!TrackSearch@{TrackSearch}}
+\index{TrackSearch@{TrackSearch}!Matomo.Maui.MatomoAnalytics@{Matomo.Maui.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackSearch()}{TrackSearch()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Matomo\+Analytics.\+Track\+Search (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{int}]{result\+Count,  }\item[{string}]{category = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks a search query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & search query (eg. \char`\"{}cats\char`\"{})\\
+\hline
+{\em result\+Count} & number of search results displayed to the user\\
+\hline
+{\em category} & categroy (eg. \char`\"{}cats\char`\"{})\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/bnoffer/\+Projects/\+Matomo.\+Maui/\+Matomo.\+Maui/Matomo\+Analytics.\+cs\end{DoxyCompactItemize}
