@@ -1,0 +1,178 @@
+\hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics}{}\doxysection{Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics Class Reference}
+\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics}\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ab9e619cc60108daf38e4f28abffbcdf6}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ab9e619cc60108daf38e4f28abffbcdf6}} 
+{\bfseries Matomo\+Analytics} (string api\+Url, int site\+Id)
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0d28431b6862826779068bfbf0917229}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0d28431b6862826779068bfbf0917229}} 
+void {\bfseries Update\+Dimension} (string name, string new\+Value)
+\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a51adfce1f7db4c09ae650df6dc69e25d}{Track\+Page}} (string name, string path=\char`\"{}/\char`\"{})
+\begin{DoxyCompactList}\small\item\em Tracks a page visit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ad9388d57ea91f6bda1a9b3b2066de6d3}{Track\+Page\+Event}} (string category, string action, string name=null, int? value=null)
+\begin{DoxyCompactList}\small\item\em Tracks an page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a10d072d91a67145438618b3832517922}{Track\+Event}} (string category, string action)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a6c276844c911217c44b5bd4ca63698d0}{Track\+Event}} (string category, string action, string name)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a49e70df32e0908e9c03f653de7cf653f}{Track\+Event}} (string category, string action, string name, int? value)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0a0553a480864f204cfa8d44cad114ba}{Track\+Search}} (string query, int result\+Count, string category=null)
+\begin{DoxyCompactList}\small\item\em Tracks a search query. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_add297dba60b6ffb6a174b29fcc825636}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_add297dba60b6ffb6a174b29fcc825636}} 
+void {\bfseries Leaving\+The\+App} ()
+\begin{DoxyCompactList}\small\item\em Track an App exit. Needed to acuratly time the visibility of last page and triggers an Dispatch(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a6caa2f04dc9cf4de8da0d39e32f7ba49}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a6caa2f04dc9cf4de8da0d39e32f7ba49}} 
+async Task$<$ bool $>$ {\bfseries Dispatch} ()
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0bda113f32952d4e4e458241d232728a}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0bda113f32952d4e4e458241d232728a}} 
+void {\bfseries Clear\+Queue} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ab3b40990590418dcf9cfa2db7293e8ad}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ab3b40990590418dcf9cfa2db7293e8ad}} 
+List$<$ \mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_dimension}{Dimension}} $>$ {\bfseries Dimensions} = new List$<$\mbox{\hyperlink{class_matomo_1_1_xamarin_1_1_forms_1_1_dimension}{Dimension}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a57b912203de06ef2cccb99d27a7f5c6d}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a57b912203de06ef2cccb99d27a7f5c6d}} 
+string {\bfseries User\+Agent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a2ff7783d49604128f90e02bf76ffd890}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a2ff7783d49604128f90e02bf76ffd890}} 
+bool {\bfseries Verbose} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_aa51820230f7894602a6fba699f27d1ca}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_aa51820230f7894602a6fba699f27d1ca}} 
+int {\bfseries Unsent\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a371cd2026ad96c419ba86b0caa5099b6}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a371cd2026ad96c419ba86b0caa5099b6}} 
+string {\bfseries App\+Url} = \char`\"{}http\+://app\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The base url used by the app (piwi\textquotesingle{}s url parameter). Default is \href{http://app}{\texttt{ http\+://app}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a045c07733c6779d93ec09603d221ce38}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a045c07733c6779d93ec09603d221ce38}} 
+bool {\bfseries Opt\+Out}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a10d072d91a67145438618b3832517922}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a10d072d91a67145438618b3832517922}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a6c276844c911217c44b5bd4ca63698d0}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a6c276844c911217c44b5bd4ca63698d0}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a49e70df32e0908e9c03f653de7cf653f}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a49e70df32e0908e9c03f653de7cf653f}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name,  }\item[{int?}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a51adfce1f7db4c09ae650df6dc69e25d}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a51adfce1f7db4c09ae650df6dc69e25d}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackPage@{TrackPage}}
+\index{TrackPage@{TrackPage}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPage()}{TrackPage()}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Page (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path = {\ttfamily \char`\"{}/\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks a page visit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & page name (eg. \char`\"{}\+Settings\char`\"{}, \char`\"{}\+Users\char`\"{}, etc)\\
+\hline
+{\em path} & path which led to the page (eg. \char`\"{}/settings/language\char`\"{}), default is \char`\"{}/\char`\"{}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ad9388d57ea91f6bda1a9b3b2066de6d3}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_ad9388d57ea91f6bda1a9b3b2066de6d3}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackPageEvent@{TrackPageEvent}}
+\index{TrackPageEvent@{TrackPageEvent}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPageEvent()}{TrackPageEvent()}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Page\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name = {\ttfamily null},  }\item[{int?}]{value = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks an page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & optional event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & optional event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0a0553a480864f204cfa8d44cad114ba}\label{class_matomo_1_1_xamarin_1_1_forms_1_1_matomo_analytics_a0a0553a480864f204cfa8d44cad114ba}} 
+\index{Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}!TrackSearch@{TrackSearch}}
+\index{TrackSearch@{TrackSearch}!Matomo.Xamarin.Forms.MatomoAnalytics@{Matomo.Xamarin.Forms.MatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackSearch()}{TrackSearch()}}
+{\footnotesize\ttfamily void Matomo.\+Xamarin.\+Forms.\+Matomo\+Analytics.\+Track\+Search (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{int}]{result\+Count,  }\item[{string}]{category = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tracks a search query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & search query (eg. \char`\"{}cats\char`\"{})\\
+\hline
+{\em result\+Count} & number of search results displayed to the user\\
+\hline
+{\em category} & categroy (eg. \char`\"{}cats\char`\"{})\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ban/\+Projects/bnoffer/\+Matomo.\+Xamarin.\+Forms/\+Matomo.\+Xamarin.\+Forms/Matomo\+Analytics.\+cs\end{DoxyCompactItemize}
