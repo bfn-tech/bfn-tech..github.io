@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dimension_0',['Dimension',['../class_matomo_1_1_maui_1_1_dimension.html',1,'Matomo::Maui']]]
+  ['dimension_0',['Dimension',['../class_matomo_1_1_maui_1_1_models_1_1_dimension.html',1,'Matomo::Maui::Models']]]
 ];

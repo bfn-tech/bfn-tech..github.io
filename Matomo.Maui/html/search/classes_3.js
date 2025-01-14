@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['shellhelper_0',['ShellHelper',['../class_matomo_1_1_maui_1_1_shell_helper.html',1,'Matomo::Maui']]],
-  ['simplestorage_1',['SimpleStorage',['../class_matomo_1_1_maui_1_1_simple_storage.html',1,'Matomo::Maui']]]
+  ['matomoanalytics_0',['MatomoAnalytics',['../class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics.html',1,'Matomo::Maui::Services::Core']]]
 ];
