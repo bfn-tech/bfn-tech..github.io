@@ -1,0 +1,345 @@
+\hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics}{}\doxysection{Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics Interface Reference}
+\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics}\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+Inheritance diagram for Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a20df98b27535f47e0b3a000f234d5218}{Update\+Dimension}} (string name, string new\+Value)
+\begin{DoxyCompactList}\small\item\em Update a existing Dimension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ab4ecdff96589f394240a311e5ac52e0d}{Track\+Page}} (string name, string path=\char`\"{}/\char`\"{})
+\begin{DoxyCompactList}\small\item\em Tracks a page visit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a7175d985a1b05ba5214732ca936ae414}{Track\+Page\+Event}} (string category, string action, string name=null, int? value=null)
+\begin{DoxyCompactList}\small\item\em Tracks an page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aebf9586bbc1522af0078e1f9ac740660}{Track\+Event}} (string category, string action)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aaa3ad15acdaac0b2cc13636758c735d1}{Track\+Event}} (string category, string action, string name)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aa7bda80e3598cda3045287f8d8b23b9f}{Track\+Event}} (string category, string action, string name, int? value)
+\begin{DoxyCompactList}\small\item\em Tracks an non-\/page related event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ad4ad095fd59d9f4d1c25f41956527404}{Track\+Search}} (string query, int result\+Count, string category=null)
+\begin{DoxyCompactList}\small\item\em Tracks a search query. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_afebf2f02afc6196599e431bb11939eee}{Leaving\+The\+App}} ()
+\begin{DoxyCompactList}\small\item\em Track an App exit. Needed to accurately time the visibility of last page and triggers an Dispatch(). \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a157dbd57d5197a48c4838d4978e15a7d}{Dispatch}} ()
+\begin{DoxyCompactList}\small\item\em Dispatches all tracked actions to the \mbox{\hyperlink{namespace_matomo}{Matomo}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a5612c135e696cd217df51f07f23e0921}{Clear\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Resets the current action queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae4d00f48705eb2652bcda42d0a6da325}{User\+Agent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Custom User\+Agent based on Device and Platform. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a23457ea17c0ebc54793d9909067cbf7d}{Verbose}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Log \mbox{\hyperlink{namespace_matomo}{Matomo}} tracking to Console. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ac5be52c0993563a7f1f37d8627871611}{Unsent\+Actions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of actions that were not yet dispatched to \mbox{\hyperlink{namespace_matomo}{Matomo}}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_matomo_1_1_maui_1_1_models_1_1_dimension}{Dimension}} $>$ \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_acd27aad7cecd65b3e264437bcb555750}{Dimensions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Custom Dimensions you can assign any custom data to your visitors or actions  \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae0b5d2389577c33a5437db13f177f043}{App\+Url}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The base url used by the app (piwi\textquotesingle{}s url parameter). Default is \href{https://app}{\texttt{ https\+://app}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a4b9ae7398f6089e761bee2bfc2ff5741}{Opt\+Out}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates if the user has opted-\/out of tracking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a5612c135e696cd217df51f07f23e0921}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a5612c135e696cd217df51f07f23e0921}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!ClearQueue@{ClearQueue}}
+\index{ClearQueue@{ClearQueue}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{ClearQueue()}{ClearQueue()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Clear\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the current action queue. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_ae94aa16dcb3c5ceb591d27cd233a6e31}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a157dbd57d5197a48c4838d4978e15a7d}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a157dbd57d5197a48c4838d4978e15a7d}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!Dispatch@{Dispatch}}
+\index{Dispatch@{Dispatch}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{Dispatch()}{Dispatch()}}
+{\footnotesize\ttfamily Task$<$ bool $>$ Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Dispatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dispatches all tracked actions to the \mbox{\hyperlink{namespace_matomo}{Matomo}} instance. 
+
+\begin{DoxyReturn}{Returns}
+true if successful, else false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a8e021c061286c43f5dcfad4085078833}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_afebf2f02afc6196599e431bb11939eee}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_afebf2f02afc6196599e431bb11939eee}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!LeavingTheApp@{LeavingTheApp}}
+\index{LeavingTheApp@{LeavingTheApp}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{LeavingTheApp()}{LeavingTheApp()}}
+{\footnotesize\ttfamily Task Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Leaving\+The\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Track an App exit. Needed to accurately time the visibility of last page and triggers an Dispatch(). 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a8c99caa5ee41edef4b6e5dbafc9c0f32}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aebf9586bbc1522af0078e1f9ac740660}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aebf9586bbc1522af0078e1f9ac740660}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action }\end{DoxyParamCaption})}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a65d3b294666c5c2686e98c1a172c0fc4}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aaa3ad15acdaac0b2cc13636758c735d1}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aaa3ad15acdaac0b2cc13636758c735d1}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_ae33677aa50404e7d96fcb162e6d44194}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aa7bda80e3598cda3045287f8d8b23b9f}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_aa7bda80e3598cda3045287f8d8b23b9f}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackEvent@{TrackEvent}}
+\index{TrackEvent@{TrackEvent}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackEvent()}{TrackEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name,  }\item[{int?}]{value }\end{DoxyParamCaption})}
+
+
+
+Tracks an non-\/page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_adc100e965e1908fcc4edad142895da0b}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ab4ecdff96589f394240a311e5ac52e0d}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ab4ecdff96589f394240a311e5ac52e0d}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackPage@{TrackPage}}
+\index{TrackPage@{TrackPage}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPage()}{TrackPage()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Page (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path = {\ttfamily \char`\"{}/\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Tracks a page visit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & page name (eg. \char`\"{}\+Settings\char`\"{}, \char`\"{}\+Users\char`\"{}, etc)\\
+\hline
+{\em path} & path which led to the page (eg. \char`\"{}/settings/language\char`\"{}), default is \char`\"{}/\char`\"{}\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a82efe86699eae0d5c4306bdc0cf74f6b}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a7175d985a1b05ba5214732ca936ae414}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a7175d985a1b05ba5214732ca936ae414}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackPageEvent@{TrackPageEvent}}
+\index{TrackPageEvent@{TrackPageEvent}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackPageEvent()}{TrackPageEvent()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Page\+Event (\begin{DoxyParamCaption}\item[{string}]{category,  }\item[{string}]{action,  }\item[{string}]{name = {\ttfamily null},  }\item[{int?}]{value = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Tracks an page related event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & event category (\char`\"{}\+Music\char`\"{}, \char`\"{}\+Video\char`\"{}, etc)\\
+\hline
+{\em action} & event action (\char`\"{}\+Play\char`\"{}, \char`\"{}\+Pause\char`\"{}, etc)\\
+\hline
+{\em name} & optional event name (eg. song title, file name, etc)\\
+\hline
+{\em value} & optional event value (eg. position in song, count of manual updates, etc)\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_adbc5c7c4af5f1b0f83a7f2b09f35bd17}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ad4ad095fd59d9f4d1c25f41956527404}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ad4ad095fd59d9f4d1c25f41956527404}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!TrackSearch@{TrackSearch}}
+\index{TrackSearch@{TrackSearch}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{TrackSearch()}{TrackSearch()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Track\+Search (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{int}]{result\+Count,  }\item[{string}]{category = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Tracks a search query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & search query (eg. \char`\"{}cats\char`\"{})\\
+\hline
+{\em result\+Count} & number of search results displayed to the user\\
+\hline
+{\em category} & categroy (eg. \char`\"{}cats\char`\"{})\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a80c96eeb18eeb4162d585afc4c3c306b}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a20df98b27535f47e0b3a000f234d5218}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a20df98b27535f47e0b3a000f234d5218}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!UpdateDimension@{UpdateDimension}}
+\index{UpdateDimension@{UpdateDimension}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{UpdateDimension()}{UpdateDimension()}}
+{\footnotesize\ttfamily void Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Update\+Dimension (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Update a existing Dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Dimension\\
+\hline
+{\em new\+Value} & New value\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_af89efcdfc3dac422bb1100dbf9ae8951}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae0b5d2389577c33a5437db13f177f043}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae0b5d2389577c33a5437db13f177f043}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!AppUrl@{AppUrl}}
+\index{AppUrl@{AppUrl}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{AppUrl}{AppUrl}}
+{\footnotesize\ttfamily string Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+App\+Url\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The base url used by the app (piwi\textquotesingle{}s url parameter). Default is \href{https://app}{\texttt{ https\+://app}}. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_aa901cac281d388f70bb5ff88f919d36f}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_acd27aad7cecd65b3e264437bcb555750}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_acd27aad7cecd65b3e264437bcb555750}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!Dimensions@{Dimensions}}
+\index{Dimensions@{Dimensions}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{Dimensions}{Dimensions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_matomo_1_1_maui_1_1_models_1_1_dimension}{Dimension}}$>$ Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Dimensions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Custom Dimensions you can assign any custom data to your visitors or actions  
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a6a9f6127d8051ccfcc1d89b65eff6d2e}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a4b9ae7398f6089e761bee2bfc2ff5741}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a4b9ae7398f6089e761bee2bfc2ff5741}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!OptOut@{OptOut}}
+\index{OptOut@{OptOut}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{OptOut}{OptOut}}
+{\footnotesize\ttfamily bool Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Opt\+Out\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates if the user has opted-\/out of tracking. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_aaa2b6bcc32017831aa89161040db7096}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ac5be52c0993563a7f1f37d8627871611}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ac5be52c0993563a7f1f37d8627871611}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!UnsentActions@{UnsentActions}}
+\index{UnsentActions@{UnsentActions}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{UnsentActions}{UnsentActions}}
+{\footnotesize\ttfamily int Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Unsent\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of actions that were not yet dispatched to \mbox{\hyperlink{namespace_matomo}{Matomo}}. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a8fd189f02e62ec87612f95f7e0c0c0ce}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae4d00f48705eb2652bcda42d0a6da325}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_ae4d00f48705eb2652bcda42d0a6da325}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!UserAgent@{UserAgent}}
+\index{UserAgent@{UserAgent}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{UserAgent}{UserAgent}}
+{\footnotesize\ttfamily string Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+User\+Agent\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Custom User\+Agent based on Device and Platform. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_aca07cea5dd26588656c4f96c2b0b1d35}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+\mbox{\Hypertarget{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a23457ea17c0ebc54793d9909067cbf7d}\label{interface_matomo_1_1_maui_1_1_services_1_1_core_1_1_i_matomo_analytics_a23457ea17c0ebc54793d9909067cbf7d}} 
+\index{Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}!Verbose@{Verbose}}
+\index{Verbose@{Verbose}!Matomo.Maui.Services.Core.IMatomoAnalytics@{Matomo.Maui.Services.Core.IMatomoAnalytics}}
+\doxysubsubsection{\texorpdfstring{Verbose}{Verbose}}
+{\footnotesize\ttfamily bool Matomo.\+Maui.\+Services.\+Core.\+IMatomo\+Analytics.\+Verbose\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Log \mbox{\hyperlink{namespace_matomo}{Matomo}} tracking to Console. 
+
+
+
+Implemented in \mbox{\hyperlink{class_matomo_1_1_maui_1_1_services_1_1_core_1_1_matomo_analytics_a24ee5a235f2a7c344f5610563277d031}{Matomo.\+Maui.\+Services.\+Core.\+Matomo\+Analytics}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/bnoffer/\+Projects/\+Matomo.\+Maui/\+Matomo.\+Maui/\+Services/\+Core/IMatomo\+Analytics.\+cs\end{DoxyCompactItemize}
